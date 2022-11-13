@@ -5,11 +5,16 @@
 
 Console.Clear();
 Console.WriteLine("Введите число M: ");
-int numberM = int.Parse(Console.ReadLine());Console.Clear();
+int numberM = GetNumber();
 Console.WriteLine("Введите число N: ");
-int numberN = int.Parse(Console.ReadLine());
+int numberN = GetNumber();
 
 WriteNumber(numberM, numberN);
+
+int GetNumber()
+{
+    return int.Parse(Console.ReadLine());
+}
 
 void WriteNumber(int numM, int numN)
 {
