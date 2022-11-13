@@ -2,14 +2,17 @@
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
 
-Console.Clear();
-Console.WriteLine("Введите неотрицательное число m: ");
-int numberM = GetNumber();
-Console.WriteLine("Введите неотрицательное число m: ");
-int numberN = GetNumber();
+void Main()
+{
+    Console.Clear();
+    Console.WriteLine("Введите неотрицательное число m: ");
+    int numberM = GetNumber();
+    Console.WriteLine("Введите неотрицательное число m: ");
+    int numberN = GetNumber();
 
-int result = AkkNumbers(numberM, numberN);
-Console.WriteLine(result);
+    int result = AkkNumbers(numberM, numberN);
+    Console.WriteLine(result);
+}
 
 int AkkNumbers(int numM, int numN)
 {
@@ -28,3 +31,5 @@ int GetNumber()
 {
     return int.Parse(Console.ReadLine());
 }
+
+Main();
